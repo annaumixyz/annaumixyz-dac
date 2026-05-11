@@ -22,6 +22,67 @@ Live TUI • Smart Tracking • Proxy Rotation • Faucet Loop • Campaign Runn
 
 ---
 
+# ✦ Installation
+
+```bash
+git clone https://github.com/annaumixyz/annaumixyz-dac.git
+cd annaumixyz-dac
+npm install
+```
+
+---
+
+# ✦ Configuration
+
+Buat file config dari example:
+
+```bash
+cp dac.config.example.json dac.config.json
+```
+
+Optional kalau mau pakai proxy:
+
+```bash
+cp proxies.config.example.json proxies.config.json
+```
+
+Edit config utama:
+
+```bash
+nano dac.config.json
+```
+
+Format akun ada di:
+
+```txt
+dac.config.json
+```
+
+Bukan:
+
+```txt
+config/accounts.json
+```
+
+---
+
+# ✦ Launch
+
+```bash
+npm start
+```
+
+---
+
+# ✦ Requirements
+
+- Node.js 20+
+- npm
+- One or more DAC testnet wallets
+- Optional proxy config
+
+---
+
 # ✦ Features
 
 - Multi-account automation
@@ -34,133 +95,44 @@ Live TUI • Smart Tracking • Proxy Rotation • Faucet Loop • Campaign Runn
 - Stake / burn execution
 - Campaign automation
 - Real-time transaction monitoring
-- ANSI-powered terminal UI
 
 ---
 
-# ✦ Preview
-
-```txt
-◆ Multi-Account Automation
-
-Accounts: 6/12
-Done: 4   Running: 1   Failed: 0   Queue: 7
-
-✓ alpha.wallet      Complete
-✓ beta.wallet       Complete
-▶ gamma.wallet      Running faucet claim
-○ delta.wallet      queued
-○ epsilon.wallet    queued
-```
-
----
-
-# ✦ Installation
-
-## Clone Repository
-
-```bash
-git clone https://github.com/annaumixyz/annaumixyz-dac.git
-cd annaumixyz-dac
-```
-
-## Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-# ✦ Configuration
-
-# Create your configs
-
-```cp dac.config.example.json dac.config.json
-cp proxies.config.example.json proxies.config.json   # optional```
-
-
----
-
-# ✦ Launch
+# ✦ Commands
 
 ```bash
 npm start
 ```
 
-or
+Launch interactive TUI.
 
 ```bash
-node src/index.js
+node src/cli/main.js status-all
 ```
 
----
+Check all configured accounts.
 
-# ✦ Available Modes
+```bash
+node src/cli/main.js run-all
+```
 
-| Mode | Description |
-|------|-------------|
-| Auto | Guided automation |
-| Auto All | Run automation across all accounts |
-| Manual | Execute specific modules |
-| Summary | Account overview dashboard |
-| Faucet Loop | Continuous faucet farming |
-| Advanced | Mint / burn / tracking tools |
-
----
-
-# ✦ Supported Modules
-
-## Automation
-
-- Sync
-- Exploration
-- Social Tasks
-- Badge Claims
-- Faucet Claims
-- Crate Opening
-- TX Mesh
-- Receive Quests
-
-## Advanced
-
-- Burn QE
-- Stake DACC
-- Mint Scanner
-- Mint All Ranks
-- Campaign Runner
-- Snapshot Tracking
-
----
-
-# ✦ Proxy Engine
-
-Built-in support for:
-
-- Rotating proxies
-- Sticky assignment
-- Health checks
-- Cooldown recovery
-- Automatic failover
-
----
-
-# ✦ Tech Stack
-
-- Node.js
-- Custom ANSI Renderer
-- Live TUI Engine
-- Modular Automation System
-- Real-time Tracker Architecture
+Run automation for all accounts.
 
 ---
 
 # ✦ Notes
 
-- Recommended Node.js 18+
-- Linux/macOS recommended
-- Windows Terminal supported
-- Proxy usage recommended for scaling
+Pastikan file ini ada:
+
+```bash
+ls dac.config.json
+```
+
+Kalau belum ada, jalankan:
+
+```bash
+cp dac.config.example.json dac.config.json
+```
 
 ---
 
