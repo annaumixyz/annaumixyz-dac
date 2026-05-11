@@ -74,24 +74,11 @@ npm install
 
 # ✦ Configuration
 
-Edit:
+# Create your configs
 
-```bash
-config/accounts.json
-```
+```cp dac.config.example.json dac.config.json
+cp proxies.config.example.json proxies.config.json   # optional```
 
-Example:
-
-```json
-{
-  "default": "main",
-  "accounts": {
-    "main": {
-      "privateKey": "YOUR_PRIVATE_KEY"
-    }
-  }
-}
-```
 
 ---
 
