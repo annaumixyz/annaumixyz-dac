@@ -18,7 +18,7 @@
 
 AnnaumiXYZ DAC is a ground-up rebuild of the original AnnaumiXYZ DAC bot, designed for **clean architecture**, **multi-account orchestration**, and a **compact terminal interface**. Whether you're managing a single testnet wallet or running an entire fleet, the bot provides a streamlined workflow through both direct CLI commands and an interactive TUI launcher.
 
-### Why v3?
+### Why ?
 
 | Improvement | Details |
 |---|---|
@@ -37,7 +37,7 @@ AnnaumiXYZ DAC is a ground-up rebuild of the original AnnaumiXYZ DAC bot, design
 
 ```bash
 # Clone the repo
-git clone https://github.com/asbryx/annaumixyz-dac.git
+git clone https://github.com/annaumixyz/annaumixyz-dac.git
 cd annaumixyz-dac
 
 # Install dependencies
@@ -483,7 +483,8 @@ For more details, see [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md).
 | [`docs/VERIFICATION.md`](docs/VERIFICATION.md) | Test verification details |
 
 ---
-
+## Donate
+EVM : 0x3be0650d0d0408a0de0fd761ba2c88ee430a0af0
 ## License
 
 This project is private and not licensed for redistribution.
